@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="The Unreal View — presentación interactiva de arquitectura.">
+  <title>The Unreal View</title>
+  <link rel="icon" href="assets/favicon.webp">
+
+
+  <script type="module" crossorigin src="./assets/index-pnFc4WAV.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-CaWT8MYG.css">
+</head>
+<body>
+  <main class="cover" aria-label="The Unreal View">
+    <div class="image-viewport" id="viewport" tabindex="0" aria-label="Imagen panorámica"><img id="cover-image" src="assets/pres-01.webp" alt="Vista arquitectónica del proyecto, imagen 1" fetchpriority="high" draggable="false"></div>
+    <div class="toolbar"><button class="glass icon-button" id="menu-button" data-label="menu" aria-haspopup="dialog" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="languages glass" aria-label="Language"><button data-language="es" lang="es" aria-label="Español"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><path fill="#aa151b" d="M0 0h30v20H0z"/><path fill="#f1bf00" d="M0 5h30v10H0z"/></svg><span>ES</span></button><button data-language="en" lang="en" aria-label="English"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><path fill="#012169" d="M0 0h30v20H0z"/><path stroke="#fff" stroke-width="5" d="m0 0 30 20M30 0 0 20"/><path stroke="#c8102e" stroke-width="2" d="m0 0 30 20M30 0 0 20"/><path stroke="#fff" stroke-width="7" d="M15 0v20M0 10h30"/><path stroke="#c8102e" stroke-width="4" d="M15 0v20M0 10h30"/></svg><span>EN</span></button></div></div>
+    <button class="previous glass icon-button" id="previous" data-label="previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+    <button class="next glass icon-button" id="next" data-label="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+    <span class="swipe glass" id="swipe" data-text="swipe"></span>
+    <div class="cover-bottom"><div id="dots" class="dots" aria-label="Imágenes"></div><button id="enter" class="enter glass" aria-haspopup="dialog" aria-controls="menu"><span id="enter-icon"></span><span data-text="enter"></span></button></div>
+    <p id="image-error" class="image-error" role="status" hidden></p>
+  </main>
+  <dialog id="menu" class="app-menu" aria-label="Menú">
+    <div class="app-menu-shell">
+      <header class="app-menu-header"><div class="app-menu-brand"><img src="assets/nav-logo-hori.webp" alt="The Unreal View"></div><button id="close-menu" class="icon-button" data-label="close" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></header>
+      <nav class="app-menu-content" aria-label="Secciones"><div id="grid" class="app-menu-grid"></div></nav>
+      <footer class="app-menu-footer"><div class="footer-preferences"><div class="languages"><button data-language="es" lang="es" aria-label="Español"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><path fill="#aa151b" d="M0 0h30v20H0z"/><path fill="#f1bf00" d="M0 5h30v10H0z"/></svg><span>ES</span></button><button data-language="en" lang="en" aria-label="English"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><path fill="#012169" d="M0 0h30v20H0z"/><path stroke="#fff" stroke-width="5" d="m0 0 30 20M30 0 0 20"/><path stroke="#c8102e" stroke-width="2" d="m0 0 30 20M30 0 0 20"/><path stroke="#fff" stroke-width="7" d="M15 0v20M0 10h30"/><path stroke="#c8102e" stroke-width="4" d="M15 0v20M0 10h30"/></svg><span>EN</span></button></div></div><span class="copyright">© <span id="year"></span> The Unreal View App</span></footer>
+    </div>
+  </dialog>
+  <dialog id="invitation" class="invitation" aria-labelledby="invitation-title" aria-describedby="invitation-description">
+    
+    <div class="dialog-brand"><img class="dialog-logo" src="assets/nav-logo-hori.webp" alt="The Unreal View"></div>
+    <p id="selected-section" class="eyebrow"></p>
+    <h1 id="invitation-title" data-text="title"></h1>
+    <p id="invitation-description" data-text="description"></p>
+    <p class="new-tab" data-text="newTab"></p>
+    <div class="dialog-actions"><form method="dialog"><button class="cancel" data-text="cancel" autofocus></button></form><a id="open-viewer" class="primary" target="_blank" rel="noopener noreferrer"><span data-text="open"></span><span aria-hidden="true">↗</span></a></div>
+  </dialog>
+  <noscript>Para explorar esta presentación, activá JavaScript. / Enable JavaScript to explore this presentation.</noscript>
+</body>
+</html>
+
+
